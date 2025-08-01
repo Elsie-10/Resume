@@ -1,8 +1,12 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+   --background-gradient: linear-gradient(135deg, #0f172a, #1e3a8a, #3b82f6); /* Navy to blue-500 */
+  --foreground: #f1f5f9;
 }
 
 @theme inline {
@@ -23,4 +27,37 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+    /* Optional: offset scroll start to avoid content hidden under fixed header */
+    scroll-padding-top: 4rem;
+  }
+}
+
+.about-container {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.gradient-heading {
+    background: linear-gradient(to right, #FFD700, #FFEA00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.about-text {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
