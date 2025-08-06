@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Homepage(){
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center px-6 md:flex-row md:space-x-12 space-y-8 md:space-y-0">
+        <div className="min-h-screen flex flex-col items-center justify-center px-6 md:flex-row md:space-x-12 space-y-8 md:space-y-0 ">
             <motion.div
         className="text-center md:text-left"
         initial={{ opacity: 0, y: 40 }}
@@ -16,13 +16,13 @@ export default function Homepage(){
             <h2 className="
             text-3xl sm:text-4xl lg:text-5xl font-bold
     text-transparent bg-clip-text
-    bg-gradient-to-r from-purple-400 via-pink-500 to-indigo-400 inline-block">
+    bg-gradient-to-r from-yellow-400 via-yellow-500 to-amber-600  inline-block">
                  I'm Elsie Oscar 
             </h2>
         <br></br>
             <p className="text-gray-300 text-lg sm:text-xl 
              text-transparent bg-clip-text
-    bg-gradient-to-r from-purple-400 via-pink-500 to-indigo-400 inline-block">
+    bg-gradient-to-r from-yellow-400 via-yellow-500 to-amber-600  inline-block">
                  Full Stack Developer
              </p>
         </motion.div>
